@@ -2,7 +2,12 @@
 
 
 {% block body %}
-	<h1>Bienvenue !!!</h1>
+	<h1>{{ title }}</h1>
+{% if age > 18 %}
+	<h2>Tu es majeur</h2>
+{% else %}
+	<h2>Tu es mineur</h2>
+{% endif %}	
 
 
 	<p>Les fichiers et dossiers cachés apparaissent alors dans le Finder. Comme indiqué plus haut, ils s’affichent en transparence et donnent l’impression d’être grisés.</p>
